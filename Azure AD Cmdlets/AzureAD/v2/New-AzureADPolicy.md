@@ -1,6 +1,6 @@
 ---
-external help file: azuread.help.xml
-online version: https://blogs.technet.microsoft.com/enterprisemobility/2016/07/18/azuread-certificate-based-authentication-for-ios-and-android-now-in-preview/
+external help file: Microsoft.Open.MS.GraphBeta.PowerShell.dll-Help.xml
+online version: 
 schema: 2.0.0
 ---
 
@@ -13,8 +13,8 @@ schema: 2.0.0
 ```
 New-AzureADPolicy [-AlternativeIdentifier <String>]
  -Definition <System.Collections.Generic.List`1[System.String]> -DisplayName <String>
- [-IsTenantDefault <Boolean>]
- [-KeyCredentials <System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.KeyCredential]>]
+ [-IsOrganizationDefault <Boolean>]
+ [-KeyCredentials <System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.KeyCredential]>]
  -Type <String>
 ```
 
@@ -24,13 +24,13 @@ New-AzureADPolicy [-AlternativeIdentifier <String>]
 
 ### EXAMPLE 1
 ```
-New-AzureADPolicy -Definition <Array of Rules> -DisplayName <Name of Policy> -IsTenantDefault
+New-AzureADPolicy -Definition <Array of Rules> -DisplayName <Name of Policy> -IsOrganizationDefault
 ```
 
 ## PARAMETERS
 
 ### -AlternativeIdentifier
-@{Text=}
+
 
 ```yaml
 Type: String
@@ -75,26 +75,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -IsTenantDefault
-If true sets the policy as tenant's default policy, if false does nothing
-
-```yaml
-Type: Boolean
-Parameter Sets: (All)
-Aliases: 
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -KeyCredentials
-@{Text=}
+
 
 ```yaml
-Type: System.Collections.Generic.List`1[Microsoft.Open.AzureAD.Model.KeyCredential]
+Type: System.Collections.Generic.List`1[Microsoft.Open.MSGraph.Model.KeyCredential]
 Parameter Sets: (All)
 Aliases: 
 
@@ -114,6 +99,21 @@ Parameter Sets: (All)
 Aliases: 
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IsOrganizationDefault
+Set this to True if this policy is the organizational default
+
+```yaml
+Type: Boolean
+Parameter Sets: (All)
+Aliases: 
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
