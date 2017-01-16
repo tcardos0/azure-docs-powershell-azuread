@@ -14,6 +14,7 @@ Note: this is the older MSOnline V1 PowerShell module for Azure Active Directory
 
 Note: There are two versions of the MSOnline Module for Windows PowerShell available: a General Availability version and a Public Preview Version. The Public Preview version contains cmdlets that have not yet been released for General Availability.
 Select the version you want from the [Azure Active Directory Connection download page](http://connect.microsoft.com/site1164/Downloads/DownloadDetails.aspx?DownloadID=59185), download its .msi file, and click **Run** to run the installer package. For more detail info on installation of the AzureAD cmdlets please see: [Azure ActiveDirectory (MSOnline)](https://github.com/Azure/azure-docs-powershell-azuread/blob/master/Azure%20AD%20Cmdlets/MSOnline/index.md).
+Note: Requires Powershell v3 or later, update your WMF for Windows 7 operating system base.
 
 This topic displays help topics for the Azure Active Directory MSOnline module.
 
